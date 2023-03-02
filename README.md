@@ -33,3 +33,25 @@ Analyzing tweet data in education to discover patterns from multiple aspects:
   * Using Jaccard similarity to extract duplication
   * Compare the duplication between each types of twitterers
 
+## Conclusion
+* Author Identification:
+ * Most of the prolific twitterers are related to sports
+ * Twitterers with most influential effect are political entities, then social influencer
+ * Those that tweet about K-12 are news and political entities
+* Location Analysis
+ * Most of the tweets aggregate in main city like New York, Chicago, Los Angelas
+ * Topic like Florida Math Book Ban spreads from East to the West
+* Timeline Analysis
+ * There is a gap from December to March which does not have any tweets
+ * There are peaks in Spring and Autumn
+ * Reason might be semester system and election
+* Message Uniqueness Analysis
+ * 26262 duplicate out of 109509 tweets in Florida Math Book Ban
+ * Most of the duplicate tweets are not about the topic except political entities
+
+## Actionable Recommendayions
+* To improve the analysis result, I think a better text mining method will work, such as not only considering one word token search, but using ngram words to filter topics.
+* Finding better topic could better analyze the geographical spread in tweets, which can make the analysis more clear and more logical.
+* Many tweets have the same user_id but different profile, which could be problem. This time I use max function to extract one user name for each user id. Next time, I should use create time to find themost recent identity.
+* User location variable I pick might not be a good indicator to find where exactly the post is made since the users might move; however, using place information of the tweet does not work either since there are lots of missing value. Finding a better way to profile their location could be a huge improvement in location analysis.
+
