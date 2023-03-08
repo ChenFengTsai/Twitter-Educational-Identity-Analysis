@@ -49,7 +49,7 @@ Analyzing tweet data in education to discover patterns from multiple aspects:
  * 26262 duplicate out of 109509 tweets in Florida Math Book Ban
  * Most of the duplicate tweets are not about the topic except political entities
 
-## Actionable Recommendayions
+## Actionable Recommendations
 * To improve the analysis result, I think a better text mining method will work, such as not only considering one word token search, but using ngram words to filter topics.
 * Finding better topic could better analyze the geographical spread in tweets, which can make the analysis more clear and more logical.
 * Many tweets have the same user_id but different profile, which could be problem. This time I use max function to extract one user name for each user id. Next time, I should use create time to find themost recent identity.
